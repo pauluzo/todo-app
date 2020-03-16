@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VGG Todo Application</title>
+    <meta charset="utf-8" />
+    <meta name='viewport' content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="000000" />
+    <meta 
+      name="description"
+      content="A simple Todo Application that allows you to keep track of your tasks and events. Simple to use and very effective."
+    />
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="home-container">
+      <div>
+        <h1>VGG To-do Application</h1>
+      </div>
+      <div class="home">
+        <div class="todo-form">
+          <h3>ADD TODO</h3>
+          <form class="form-container">
+            <div class="input-container">
+              <label>Title</label>
+              <input id="title" type="text" value="" placeholder="Todo Title..."  />
+            </div>
+            <div class="input-container">
+              <label>Due Date</label>
+              <input id="date" type="date" value=""/>
+            </div>
+            <div class="input-container">
+              <label>Description</label>
+              <textarea id="description" type="text" value="" placeholder="Todo Description..." ></textarea>
+            </div>
+            <button id="button" class="form-button">ADD</button>
+          </form>
+        </div>
+        <div class="todo-list">
+          <h3>TODO LIST</h3>
+          <ul id="container" class="list-item-container">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="todo.js"></script>
+</html>

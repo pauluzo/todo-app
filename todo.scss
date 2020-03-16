@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+$height: 100%;
+$display: flex;
+$position: center;
+$color: rgb(23, 34, 128);
+$direction: column;
+$width: 100%;
+
+body, html {
+  height: $height;
+  margin: 0px;
+}
+
+.home-container {
+  display: flex;
+  background-color: #ffffff;
+  height: $height;
+  justify-content: space-evenly;
+  align-items: $position;
+  flex-direction: $direction;
+  h1 {
+    color: $color;
+  }
+}
+
+.home {
+  display: $display;
+  width: 80%;
+  height: 70%;
+  justify-content: space-between;
+  align-items: $position;
+}
+
+.todo-form, .todo-list {
+  width: 49%;
+  height: $height;
+  display: $display;
+  flex-direction: $direction;
+  border: 2px solid $color;
+  border-radius: 5px;
+  align-items: $position;
+  h3 {
+    font-weight: 600;
+    color: $color;
+  }
+}
+
+.todo-form {
+  background-color: $color;
+  color: white;
+  h3 {
+    color: white;
+  }
+}
+
+.form-container {
+  width: 80%;
+  min-width: 100px;
+  max-width: 300px;
+  flex: 1;
+  margin-bottom: 10%;
+  display: $display;
+  flex-direction: $direction;
+  align-items: $position;
+  div {
+    width: 100%;
+  }
+}
+
+.input-container {
+  display: $display;
+  flex-direction: $direction;
+  padding: 2px;
+  margin: 10px 0px;
+  label {
+    font-size: 1.1em;
+    color: white;
+  }
+  input {
+    border: 1px solid $color;
+    border-radius: 5px;
+    height: 1.8em;
+    padding-left: 2px;
+  }
+  textarea {
+    border: 1px solid $color;
+    border-radius: 5px;
+    height: 4em;
+  }
+}
+
+.form-button {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: $color;
+  margin: 10px 0px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  box-shadow: 4px 2px 2px;
+  cursor: pointer;
+}
+
+.list-item-container {
+  width: 100%;
+  flex: 1;
+  margin-bottom: 10%;
+  display: $display;
+  flex-direction: $direction;
+  align-items: $position;
+  padding-top: 10px;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.list-item {
+  display: flex;
+  align-items: $position;
+  width: 90%;
+  border: 1px solid $color;
+  border-radius: 10px;
+  margin: 10px 0px;
+  height: 4em;
+}
+
+.serial-number {
+  flex: 1;
+  display: $display;
+  justify-content: $position;
+}
+
+.details {
+  display: $display;
+  flex-direction: $direction;
+  flex: 7;
+}
+
+.date {
+  flex: 3;
+  display: $display;
+  justify-content: $position;
+  font-size: 0.8em;
+}
+
+.delete {
+  flex: 2;
+  display: $display;
+  justify-content: $position;
+}
+
+.icon {
+  padding: 3px;
+  cursor: pointer;
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.item-title, .item-description, .serial-number, .date, .delete {
+  color: $color;
+}
